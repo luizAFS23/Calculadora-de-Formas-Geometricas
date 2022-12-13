@@ -15,7 +15,7 @@ namespace Projeto1
     {
         static void Main (string []args){
             try{
-
+                Console.WriteLine("################## Calculadora de Áreas de Formas Geométricas ##################")
                 Console.Write("Quantas formas geométricas você deseja inserir? ");
                 int numero_de_formas = int.Parse(Console.ReadLine());
                 List<Formas> list = new List<Formas>();
@@ -25,7 +25,7 @@ namespace Projeto1
 
                         Console.WriteLine("Retângulo ou círculo (r/c)? ");
                         char escolha_forma = char.Parse(Console.ReadLine());
-                        Console.WriteLine("Coor da forma geométrica (Vermelho/Azul/Preto): ");
+                        Console.WriteLine("Cor da forma geométrica (Vermelho/Azul/Preto): ");
                         Cores escolha_cores = Enum.Parse<Cores>(Console.ReadLine());
                         if(escolha_forma == 'r'){
                             Console.Write("Largura: ");
